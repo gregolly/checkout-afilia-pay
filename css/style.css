@@ -1,0 +1,289 @@
+@font-face{
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('../fonts/SourceSansPro-Regular.ttf');
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f7f7f7;
+}
+label{
+    color: #515151;
+    font-size: 18px
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.box-shadow{
+    box-shadow: 0px 3px 6px rgba(0,0,0,.5);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.titulo{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background-color: #DDDDDD;
+    color: #515151;
+    font-weight: 400;
+}
+/*parte 1*/
+input[type="text"], input[type="email"]{
+    display: block;
+    width: 100%;
+    border: .5px solid #515151;
+    /* border: none; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/*Parte 2*/
+.cartao-credito span{
+    color: #F5F5F5;
+}
+.cartao-credito{
+    /* background: #515151; */
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ccc;
+}
+.boleto{
+    background: #F5F5F5;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.boleto span{
+    color: #515151;
+}
+/* form 3*/
+.dados-do-cartao{
+    display: none !important;
+}
+.dados-cartao-form select{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 30px;
+    color: #515151;
+    /* border: none; */
+    border: .5px solid #515151;
+    border-radius: 5px;
+}
+.descricao-produto{
+    margin: 0 auto;
+}
+.info-produto{
+    margin-left: 10px;
+    color: #515151;
+    font-size: 18px;
+    line-height: 1.5;
+    position: relative;
+}
+.info-produto header{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.img-produto{
+    width: 85px;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-right: 10px;
+}
+.info-produto .nome-autor{
+    color: #B2B2B2;
+    font-size: 14px;
+    display: block;
+}
+.preco{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: #13E86F;
+}
+.-validade{
+    max-width: 100%;
+}
+.cvv{
+    max-width: 40%;
+}
+.compra-segura{
+    color: #07AA17;
+    margin-left: 5px;
+}
+.-poli::after{
+    content: '';
+    width: 1px;
+    height: 12px;
+    display: inline-block;
+    background-color: #d1d1d1;
+    margin-left: 10px;
+}
+.cupom{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #515151;
+    outline: none;
+    cursor: pointer;
+}
+.finalizar{
+    display: block;
+    max-width: 850px;
+    width: 100%;
+    border: none;
+    background-color: #07AA17;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #F5F5F5;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+.finalizar:hover{
+    opacity: .8;
+}
+.cupom-desconto{
+    display: none !important;
+    /* align-items: flex-start; */
+    /* bottom: 193px; */
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    background: #f7f7f7;
+    padding: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+.centralizar{
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.fechar-cupom{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #d1d1d1;
+    content: 'X';
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+}
+.fechar-cupom:hover{
+    color: #fff;
+    transition: .3s;
+}
+.cupom-desconto input{
+    border: 1px solid #d5d5d5;
+    padding: 5px;
+    /* position: absolute; */
+}
+.aplicar-cupoms{
+    width: 100%;
+    border: none;
+    background: #212121;
+    color: #f8f8f8;
+    /* border: 1px solid #d5d5d5; */
+    padding: 5px;
+    /* position: absolute; */
+    right: 0;
+}
+.input-number{
+    width: 100px !important;
+    padding: 5px !important;
+}
+/* css adicionado com js*/
+.ativo{
+    display: block !important;
+    animation: modal .5s ease-in;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d('-180deg');
+    }
+    to{
+        opacity: 1;
+        transform: translate3d('0deg');
+    }
+}
+.bg-color{
+    background: #515151 !important;
+}
+.color-span{
+    color: #fff !important;
+}
+#pay{
+    width: 50px;
+    height: 30px;
+}
+#money_1_{
+    background-color: #F5F5F5;
+    width: 50px;
+    height: 30px;
+}
+#lock{
+    margin-right: 5px !important;
+}
+.wPay{
+    transform: scale(.5);
+}
+@media (max-width: 991px){
+    .banner-lateral{
+        display: none !important;
+    }
+}
+@media (max-width: 768px){
+    .titulo{
+        font-size: 18px;
+    }
+    .selecionar-metodo-pagamentos span{
+        font-size: 14px;
+    }
+    .finalizar{
+        max-width: 350px;
+    }
+    .jp-card-container{
+        width: 300px;
+    }
+    .jp-card{
+        margin: 0 auto;
+        min-width: 288px !important;
+    }
+    .cupom-desconto{
+        right: 35px;
+        width: 90%;
+    }
+    .centralizar{
+        width: 75%;
+    }
+    .-poli::after{
+        display: none;
+    }
+    .cvv{
+        max-width: 100%;
+    }
+    .boleto span,
+    .cartao-credito span{
+        font-size: 11px;
+    }
+    #pay{
+        width: 30px;
+        height: 20px;
+    }
+    #money_1_{
+        width: 35px;
+        height: 20px;
+    }
+}
